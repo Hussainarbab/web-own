@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Wrapper */
+.h-wrapper {
+  width: 100%;
+  background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Container */
+.h-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Menu */
+.h-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: all 0.3s ease;
+}
+
+.h-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.h-menu a:hover {
+  color: #0077ff;
+}
+
+/* Button */
+.h-menu button {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.h-menu button:hover {
+  background-color: #005fcc;
+  transform: scale(1.05);
+}
+
+.h-menu button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hamburger icon (hidden on desktop) */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 2000;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* When active (X icon) */
+.menu-icon.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ------------------ Responsive ------------------ */
+
+/* Tablets and smaller */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .h-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: max-height 0.3s ease;
+  }
+
+  .h-menu.open {
+    max-height: 400px; /* Show menu */
+    padding: 1rem 0;
+  }
+
+  .h-menu a {
+    padding: 0.8rem 0;
+    display: block;
+    color: #333;
+  }
+
+  .h-menu button {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
+/* Mobile small */
+@media (max-width: 480px) {
+  .h-container {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .h-menu a {
+    font-size: 0.9rem;
+  }
+}
