@@ -30,21 +30,6 @@
   font-weight: 700;
   color: #1f3e72;
   letter-spacing: -0.5px;
-  position: relative;
-}
-
-.logo-dot-container {
-  position: relative;
-}
-
-.logo-dot {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  width: 8px;
-  height: 8px;
-  background: #4066ff;
-  border-radius: 50%;
 }
 
 /* Menu */

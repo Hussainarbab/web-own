@@ -38,8 +38,8 @@ export default function Value() {
             <h2>Value We Give to You</h2>
           </div>
           <p className="value-description">
-            We always ready to help by providing the best services for you.
-            We believe a good place to live can make your life better.
+            We are always ready to help by providing the best development services for you.
+            We believe quality development can make your business grow.
           </p>
 
           {/* Accordion */}
@@ -72,8 +72,8 @@ export default function Value() {
           <div className="value-image-container">
             <div className="value-image">
               <img 
-                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=600&fit=crop" 
-                alt="Modern house" 
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=600&fit=crop" 
+                alt="Development workspace" 
               />
             </div>
           </div>

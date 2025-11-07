@@ -7,13 +7,13 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-left">
           <p className="footer-vision">
-            Our vision is to make all people the best place to live for them.
+            Our vision is to connect businesses with talented developers and provide the best development services.
           </p>
         </div>
         <div className="footer-right">
           <div className="footer-info">
             <h3>Information</h3>
-            <p>145 New York, FL 5467, USA</p>
+            <p>Gilgit Baltistan, Pakistan</p>
           </div>
           <div className="footer-links">
             <a href="#property">Property</a>

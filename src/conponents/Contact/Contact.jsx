@@ -3,34 +3,54 @@ import { HiPhone, HiChatAlt2, HiVideoCamera, HiMail } from 'react-icons/hi'
 import './Contact.css'
 
 export default function Contact() {
+  const phoneNumber = '03555960875'
+  const email = 'arbabhussan63@gmail.com'
+  
+  // Format phone number for WhatsApp (remove leading 0 and add country code for Pakistan +92)
+  const whatsappNumber = '92' + phoneNumber.substring(1)
+
   const contactMethods = [
     {
       icon: <HiPhone size={30} />,
       title: 'Call',
-      number: '021 123 145 14',
+      number: phoneNumber,
       buttonText: 'Call now',
-      action: () => window.location.href = 'tel:02112314514'
+      action: () => {
+        window.location.href = `tel:${phoneNumber}`
+      }
     },
     {
       icon: <HiChatAlt2 size={30} />,
       title: 'Chat',
-      number: '021 123 145 14',
+      number: phoneNumber,
       buttonText: 'Chat now',
-      action: () => console.log('Chat clicked')
+      action: () => {
+        // Open WhatsApp chat
+        window.open(`https://wa.me/${whatsappNumber}`, '_blank')
+      }
     },
     {
       icon: <HiVideoCamera size={30} />,
       title: 'Video Call',
-      number: '021 123 145 14',
+      number: phoneNumber,
       buttonText: 'Video Call now',
-      action: () => console.log('Video call clicked')
+      action: () => {
+        // Open WhatsApp - user can initiate video call from WhatsApp app
+        // Note: Direct video call URLs aren't supported, opens WhatsApp chat
+        window.open(`https://wa.me/${whatsappNumber}?text=Hello`, '_blank')
+      }
     },
     {
       icon: <HiMail size={30} />,
       title: 'Message',
-      number: '021 123 145 14',
+      number: email,
       buttonText: 'Message now',
-      action: () => console.log('Message clicked')
+      action: () => {
+        // Open Gmail compose
+        const subject = encodeURIComponent('Inquiry from Arbabxada Website')
+        const body = encodeURIComponent('Hello,\n\nI would like to get in touch regarding...')
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
+      }
     }
   ]
 
@@ -44,8 +64,8 @@ export default function Contact() {
             <h2>Easy to contact us</h2>
           </div>
           <p className="contact-description">
-            We always ready to help by providing the best services for you.
-            We believe a good place to live can make your life better.
+            We are always ready to help by providing the best development services for you.
+            Contact us to discuss your project requirements.
           </p>
 
           {/* Contact Cards Grid */}
@@ -75,8 +95,8 @@ export default function Contact() {
           <div className="contact-image-container">
             <div className="contact-image">
               <img 
-                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=600&fit=crop" 
-                alt="Modern house" 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=600&fit=crop" 
+                alt="Development team" 
               />
             </div>
           </div>

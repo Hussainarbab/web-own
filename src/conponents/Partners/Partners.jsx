@@ -1,14 +1,15 @@
 import React from 'react'
-import { HiGlobeAlt } from 'react-icons/hi'
-import { FaBuilding } from 'react-icons/fa'
+import { HiGlobeAlt, HiCode, HiLightningBolt } from 'react-icons/hi'
+import { FaBuilding, FaLaptopCode } from 'react-icons/fa'
 import './Partners.css'
 
 export default function Partners() {
   const partners = [
-    { name: 'PROLOGIS.', icon: <HiGlobeAlt size={40} /> },
-    { name: 'AMERICAN TOWER', icon: <FaBuilding size={40} /> },
-    { name: 'EQUINIX', icon: <span className="equinix-icon">E</span> },
-    { name: 'DIGITAL REALTY', icon: <FaBuilding size={40} /> }
+    { name: 'MURAZOID', icon: <HiCode size={40} /> },
+    { name: 'GB TECH SOLUTIONS', icon: <FaLaptopCode size={40} /> },
+    { name: 'KARAKORAM DIGITAL', icon: <HiGlobeAlt size={40} /> },
+    { name: 'HUNZA DEVELOPERS', icon: <HiLightningBolt size={40} /> },
+    { name: 'BALTISTAN IT', icon: <FaBuilding size={40} /> }
   ]
 
   return (

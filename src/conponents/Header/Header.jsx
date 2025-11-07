@@ -10,7 +10,7 @@ export default function Header() {
         {/* Logo */}
         <div className="logo">
           <span className="logo-text">
-            Homy<span className="logo-dot-container">z<span className="logo-dot"></span></span>
+            Arbabxada
           </span>
         </div>
 
@@ -26,7 +26,8 @@ export default function Header() {
 
         {/* Navigation */}
         <div className={`h-menu ${menuOpen ? 'open' : ''}`}>
-          <a href="#residencies">Residencies</a>
+          <a href="#residencies">Services</a>
+          <a href="#developers">Developers</a>
           <a href="#values">Our Value</a>
           <a href="#contact">Contact Us</a>
           <a href="#getstarted">Get Started</a>
