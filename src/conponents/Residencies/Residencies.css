@@ -1,0 +1,154 @@
+.residencies-wrapper {
+  width: 100%;
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.residencies-container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.residencies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.orange-text {
+  color: #ff8c00;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.residencies-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f3e72;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #5c5c5c;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover:not(:disabled) {
+  background: #1f3e72;
+  color: white;
+  border-color: #1f3e72;
+}
+
+.nav-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cards-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 1rem;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.property-card {
+  min-width: 320px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f3e72;
+}
+
+.card-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f3e72;
+}
+
+.card-address {
+  font-size: 0.9rem;
+  color: #8c8c8c;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .residencies-wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .residencies-header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .residencies-header h2 {
+    font-size: 2rem;
+  }
+
+  .property-card {
+    min-width: 280px;
+  }
+}
+

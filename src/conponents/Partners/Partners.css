@@ -1,0 +1,55 @@
+.partners-wrapper {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 3rem 2rem;
+}
+
+.partners-container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #1f3e72;
+}
+
+.partner-icon {
+  color: #4066ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.equinix-icon {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4066ff;
+  font-style: italic;
+}
+
+.partner-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #5c5c5c;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .partners-container {
+    gap: 2rem;
+  }
+
+  .partner-item {
+    min-width: 120px;
+  }
+}
+

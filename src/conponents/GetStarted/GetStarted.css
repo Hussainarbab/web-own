@@ -1,0 +1,64 @@
+.getstarted-wrapper {
+  width: 100%;
+  padding: 5rem 2rem;
+  background: #1f3e72;
+}
+
+.getstarted-container {
+  max-width: 1280px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.getstarted-container h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.getstarted-container p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.getstarted-button {
+  background: transparent;
+  color: #1f3e72;
+  border: 2px solid white;
+  padding: 1rem 3rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.getstarted-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .getstarted-wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .getstarted-container h2 {
+    font-size: 2rem;
+  }
+
+  .getstarted-container p {
+    font-size: 1rem;
+  }
+}
+

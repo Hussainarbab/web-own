@@ -1,0 +1,166 @@
+.contact-wrapper {
+  width: 100%;
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.contact-container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.orange-text {
+  color: #ff8c00;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f3e72;
+  margin: 0;
+}
+
+.contact-description {
+  font-size: 1rem;
+  color: #8c8c8c;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.contact-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-card-icon {
+  color: #4066ff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-card-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f3e72;
+  margin: 0 0 0.3rem 0;
+}
+
+.contact-card-info p {
+  font-size: 0.9rem;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.contact-card-button {
+  background: #1f3e72;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.contact-card-button:hover {
+  background: #2a4d8a;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-image-container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
