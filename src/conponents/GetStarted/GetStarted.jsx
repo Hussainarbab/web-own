@@ -26,6 +26,6 @@ export default function GetStarted() {
         <GetStartedModal onClose={() => setShowModal(false)} />
       )}
     </section>
-  )
+  )a
 }
 
